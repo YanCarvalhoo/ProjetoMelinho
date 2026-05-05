@@ -3,18 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="INTEC Assessoria Contábil — Contabilidade digital com relacionamento humano. Soluções para micro, pequenas e grandes empresas em todo o Brasil." />
-  <title>INTEC Assessoria Contábil — Sobre Nós</title>
+  <meta name="description" content="Atlas Assessoria — Contabilidade estratégica, digital e humanizada. Soluções de alto nível para empresas que querem crescer com inteligência em 2026." />
+  <meta name="theme-color" content="#2e1a1a" />
+
+  <!-- ── Favicon ATLAS (SVG moderno + fallbacks) ── -->
+  <link rel="icon"            type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon"  type="image/x-icon"  href="favicon.svg" />
+  <link rel="apple-touch-icon"                     href="favicon.svg" />
+
+  <title>Intec Assessoria — Contabilidade Estratégica para 2026</title>
+
+  <!-- Open Graph (compartilhamento social) -->
+  <meta property="og:title"       content="Atlas Assessoria — Contabilidade Estratégica" />
+  <meta property="og:description" content="Soluções contábeis de alto nível para empresas que crescem com inteligência." />
+  <meta property="og:type"        content="website" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Phosphor Icons (CDN) -->
+  <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
 
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
 
@@ -24,23 +56,43 @@
   <header class="header" id="top">
     <div class="container header__inner">
 
-      <!-- Logo -->
-      <a href="#top" class="header__logo" aria-label="INTEC Assessoria Contábil">
-        <span class="logo__icon">▲</span>
+      <!-- Logo ATLAS -->
+      <a href="#top" class="header__logo" aria-label="Atlas Assessoria">
+        <!-- SVG inline da logo para herdar cores via CSS -->
+        <svg class="logo__svg" width="32" height="32" viewBox="0 0 64 64"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="12" fill="currentColor" opacity="0.15"/>
+          <circle cx="32" cy="21" r="13" fill="none"
+                  stroke="currentColor" stroke-width="2.5" opacity="0.9"/>
+          <ellipse cx="32" cy="21" rx="13" ry="5.2"
+                   fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <line x1="22" y1="36" x2="26" y2="27"
+                stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+          <line x1="42" y1="36" x2="38" y2="27"
+                stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+          <circle cx="32" cy="33.5" r="3" fill="currentColor"/>
+          <rect x="28.5" y="36" width="7" height="8" rx="2" fill="currentColor"/>
+          <line x1="30.5" y1="44" x2="28" y2="52"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="33.5" y1="44" x2="36" y2="52"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="32" cy="8" r="2.2" fill="currentColor" opacity="0.8"/>
+        </svg>
         <span class="logo__text">INTEC<em>assessoria</em></span>
       </a>
 
       <!-- Nav links -->
-      <nav class="header__nav" id="nav">
-        <a href="#sobre" class="nav__link">Sobre</a>
+      <nav class="header__nav" id="nav" aria-label="Navegação principal">
+        <a href="#sobre"        class="nav__link">Sobre</a>
         <a href="#diferenciais" class="nav__link">Diferenciais</a>
-        <a href="#valores" class="nav__link">Valores</a>
-        <a href="#contato" class="nav__link">Contato</a>
-        <a href="#contato" class="btn btn--primary btn--sm">Fale Conosco</a>
+        <a href="#valores"      class="nav__link">Valores</a>
+        <a href="#contato"      class="nav__link">Contato</a>
+        <a href="#contato"      class="btn btn--primary btn--sm">Fale Conosco</a>
       </nav>
 
       <!-- Hambúrguer mobile -->
-      <button class="header__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <button class="header__toggle" id="menuToggle"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
 
@@ -60,33 +112,33 @@
 
     <div class="container hero__inner">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Contabilidade Digital &amp; Humanizada</span>
+        <span class="hero__eyebrow">Contabilidade Estratégica &amp; Digital — 2026</span>
         <h1 class="hero__title">
-          Seu negócio merece<br />
-          <em class="hero__highlight">mais do que números.</em>
+          Sustente seu negócio<br />
+          <em class="hero__highlight">como Atlas sustenta o mundo.</em>
         </h1>
         <p class="hero__subtitle">
-          A INTEC une tecnologia e relacionamento para oferecer soluções contábeis usadas nas grandes corporações — acessíveis para micro, pequenas e médias empresas.
+          A Atlas une inteligência fiscal, automação contábil e relacionamento humano para dar a empresas de qualquer porte a base sólida que grandes corporações têm.
         </p>
         <div class="hero__actions">
-          <a href="#contato" class="btn btn--primary">Fale Conosco</a>
-          <a href="#sobre" class="btn btn--ghost">Conheça a INTEC</a>
+          <a href="#contato" class="btn btn--primary">Fale com um Especialista</a>
+          <a href="#sobre"   class="btn btn--ghost">Conheça a Atlas</a>
         </div>
       </div>
 
       <!-- Estatísticas flutuantes -->
       <div class="hero__stats reveal reveal--delay-1">
         <div class="stat-card">
-          <span class="stat-card__number">+500</span>
-          <span class="stat-card__label">Clientes atendidos</span>
+          <span class="stat-card__number">+600</span>
+          <span class="stat-card__label">Empresas assessoradas</span>
         </div>
         <div class="stat-card">
-          <span class="stat-card__number">6+</span>
+          <span class="stat-card__number">8+</span>
           <span class="stat-card__label">Anos de mercado</span>
         </div>
         <div class="stat-card">
           <span class="stat-card__number">100%</span>
-          <span class="stat-card__label">Digital e acessível</span>
+          <span class="stat-card__label">Digital e seguro</span>
         </div>
       </div>
     </div>
@@ -104,17 +156,42 @@
   <section class="about" id="sobre">
     <div class="container about__inner">
 
-      <!-- Coluna de imagem / ilustração -->
+      <!-- Coluna visual -->
       <div class="about__visual reveal reveal--left">
         <div class="about__image-wrap">
           <div class="about__image-block">
             <div class="about__img-placeholder">
-              <i class="ph ph-buildings"></i>
+              <!-- Atlas SVG ilustrativo inline -->
+              <svg width="120" height="140" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg"
+                   aria-hidden="true" opacity="0.35">
+                <circle cx="32" cy="18" r="14" fill="none" stroke="#F2994B" stroke-width="2"/>
+                <ellipse cx="32" cy="18" rx="14" ry="5.5"
+                         fill="none" stroke="#F2D479" stroke-width="1.2" opacity="0.7"/>
+                <ellipse cx="32" cy="18" rx="6.5" ry="14"
+                         fill="none" stroke="#F2D479" stroke-width="1.2" opacity="0.4"/>
+                <line x1="18" y1="18" x2="46" y2="18"
+                      stroke="#F2D479" stroke-width="1" opacity="0.5"/>
+                <line x1="20" y1="34" x2="25" y2="24"
+                      stroke="#BDAFA8" stroke-width="3" stroke-linecap="round"/>
+                <line x1="44" y1="34" x2="39" y2="24"
+                      stroke="#BDAFA8" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="32" cy="31" r="3.5" fill="#BDAFA8"/>
+                <rect x="28" y="34" width="8" height="10" rx="2" fill="#BDAFA8"/>
+                <line x1="30" y1="44" x2="27" y2="56"
+                      stroke="#BDAFA8" stroke-width="3" stroke-linecap="round"/>
+                <line x1="34" y1="44" x2="37" y2="56"
+                      stroke="#BDAFA8" stroke-width="3" stroke-linecap="round"/>
+                <line x1="23" y1="57" x2="31" y2="57"
+                      stroke="#D9653B" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="33" y1="57" x2="41" y2="57"
+                      stroke="#D9653B" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="32" cy="4" r="2.5" fill="#F2D479"/>
+              </svg>
             </div>
           </div>
           <div class="about__badge">
-            <i class="ph ph-trophy"></i>
-            <span>Excelência em<br/>Atendimento</span>
+            <i class="ph ph-globe"></i>
+            <span>Visão Global,<br/>Ação Local</span>
           </div>
         </div>
       </div>
@@ -122,17 +199,17 @@
       <!-- Coluna de texto -->
       <div class="about__text reveal reveal--right">
         <span class="section__eyebrow">Quem Somos</span>
-        <h2 class="section__title">Uma contabilidade que se diferencia pelo <em>relacionamento</em></h2>
+        <h2 class="section__title">A base que seu negócio precisa para <em>ir mais longe</em></h2>
         <p class="about__paragraph">
-          A INTEC nasceu em 2018 da amizade e das experiências profissionais de Humberto e Diogo, dois especialistas formados nas áreas de Contabilidade, Administração de Pessoal e Direito Empresarial em grandes corporações.
+          Como Atlas da mitologia grega — que carregava o peso do mundo com força e determinação — a Atlas Assessoria sustenta os alicerces financeiros e fiscais de centenas de empresas no Brasil. Nascemos da experiência acumulada em grandes corporações e do desejo genuíno de democratizar esse conhecimento.
         </p>
         <p class="about__paragraph">
-          A proposta é simples e poderosa: levar as mesmas ferramentas e soluções utilizadas em multinacionais para as micro e pequenas empresas — com transparência, respeito e um atendimento verdadeiramente personalizado.
+          Em 2026, combinamos inteligência artificial, automação de processos e consultoria humana para entregar o que escritórios tradicionais não conseguem: velocidade sem perder a personalização, tecnologia sem abrir mão do relacionamento.
         </p>
         <p class="about__paragraph">
-          Porque sabemos que você está saturado de promessas vazias e pós-venda falho. Aqui, cada cliente é único e tratado como tal.
+          Porque seu negócio merece mais do que um contador — merece um parceiro estratégico comprometido com o seu crescimento de longo prazo.
         </p>
-        <a href="#contato" class="btn btn--primary">Conheça nossos serviços</a>
+        <a href="#contato" class="btn btn--primary">Agendar uma conversa</a>
       </div>
 
     </div>
@@ -145,59 +222,59 @@
   <section class="differentials" id="diferenciais">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section__eyebrow">Por que a INTEC?</span>
-        <h2 class="section__title">Diferenciais que fazem a <em>diferença</em></h2>
-        <p class="section__subtitle">Não somos mais um escritório de contabilidade. Somos parceiros do seu crescimento.</p>
+        <span class="section__eyebrow">Por que a Atlas?</span>
+        <h2 class="section__title">Diferenciais que sustentam <em>resultados reais</em></h2>
+        <p class="section__subtitle">Não somos um escritório contábil comum. Somos a base estratégica do seu crescimento em 2026.</p>
       </div>
 
       <div class="diff-grid">
 
         <div class="diff-card reveal reveal--delay-1">
           <div class="diff-card__icon">
-            <i class="ph ph-device-mobile"></i>
+            <i class="ph ph-cpu"></i>
           </div>
-          <h3 class="diff-card__title">Contabilidade 100% Digital</h3>
-          <p class="diff-card__text">Acesse documentos, relatórios e suporte pelo app INTEC, de onde estiver. Tecnologia a serviço da sua praticidade.</p>
+          <h3 class="diff-card__title">Contabilidade com IA</h3>
+          <p class="diff-card__text">Utilizamos inteligência artificial para antecipar obrigações fiscais, detectar inconsistências e entregar relatórios gerenciais em tempo real — com zero retrabalho.</p>
         </div>
 
         <div class="diff-card reveal reveal--delay-2">
           <div class="diff-card__icon">
             <i class="ph ph-user-circle"></i>
           </div>
-          <h3 class="diff-card__title">Atendimento Personalizado</h3>
-          <p class="diff-card__text">Cada cliente tem sua realidade. Entendemos o seu contexto para oferecer soluções sob medida, sem scripts engessados.</p>
+          <h3 class="diff-card__title">Atendimento Dedicado</h3>
+          <p class="diff-card__text">Cada cliente tem um consultor exclusivo que entende profundamente o seu negócio. Sem atendentes genéricos, sem tickets sem resposta.</p>
         </div>
 
         <div class="diff-card reveal reveal--delay-3">
           <div class="diff-card__icon">
             <i class="ph ph-chart-line-up"></i>
           </div>
-          <h3 class="diff-card__title">Visão Estratégica</h3>
-          <p class="diff-card__text">Capacitamos o empreendedor para uma gestão sólida e eficaz, com a visão estratégica das grandes corporações.</p>
+          <h3 class="diff-card__title">Inteligência Gerencial</h3>
+          <p class="diff-card__text">Dashboards e relatórios estratégicos que transformam dados contábeis em decisões de negócio — a mesma visão que diretores de multinacionais têm acesso.</p>
         </div>
 
         <div class="diff-card reveal reveal--delay-1">
           <div class="diff-card__icon">
-            <i class="ph ph-handshake"></i>
+            <i class="ph ph-shield-check"></i>
           </div>
-          <h3 class="diff-card__title">Transparência Total</h3>
-          <p class="diff-card__text">Sem letras miúdas, sem surpresas. Trabalhamos com clareza e honestidade em cada etapa da sua jornada empresarial.</p>
+          <h3 class="diff-card__title">Conformidade Garantida</h3>
+          <p class="diff-card__text">Monitoramento contínuo de obrigações fiscais, trabalhistas e societárias. Seu negócio protegido de autuações e multas — 100% em dia com o Fisco.</p>
         </div>
 
         <div class="diff-card reveal reveal--delay-2">
           <div class="diff-card__icon">
-            <i class="ph ph-lightning"></i>
+            <i class="ph ph-device-mobile"></i>
           </div>
-          <h3 class="diff-card__title">Rapidez e Eficiência</h3>
-          <p class="diff-card__text">Processos ágeis que resolvem suas demandas com velocidade, liberando seu tempo para o que realmente importa: o seu negócio.</p>
+          <h3 class="diff-card__title">Plataforma 100% Digital</h3>
+          <p class="diff-card__text">Acesse documentos, assine digitalmente, acompanhe obrigações e se comunique com seu consultor pelo app Atlas — de qualquer lugar, a qualquer hora.</p>
         </div>
 
         <div class="diff-card reveal reveal--delay-3">
           <div class="diff-card__icon">
-            <i class="ph ph-graduation-cap"></i>
+            <i class="ph ph-globe-hemisphere-west"></i>
           </div>
-          <h3 class="diff-card__title">Expertise Corporativa</h3>
-          <p class="diff-card__text">Fundadores com larga experiência em multinacionais. Conhecimento de alto nível acessível para empresas de todos os tamanhos.</p>
+          <h3 class="diff-card__title">Visão de Longo Prazo</h3>
+          <p class="diff-card__text">Como o Atlas que sustenta o céu, carregamos junto com você a estrutura que permite ao seu negócio crescer com segurança, previsibilidade e escalabilidade.</p>
         </div>
 
       </div>
@@ -214,7 +291,7 @@
 
       <div class="section__header section__header--light reveal">
         <span class="section__eyebrow section__eyebrow--light">Nosso DNA</span>
-        <h2 class="section__title section__title--light">O que nos move <em>todos os dias</em></h2>
+        <h2 class="section__title section__title--light">Os pilares que nos <em>sustentam</em></h2>
       </div>
 
       <div class="values-blocks">
@@ -223,7 +300,7 @@
           <div class="value-block__number">01</div>
           <div class="value-block__content">
             <h3>Nossa Missão</h3>
-            <p>Apresentar ferramentas e soluções utilizadas em grandes corporações para pequenas e médias empresas, capacitando o empreendedor para uma gestão sólida, eficaz e rentável.</p>
+            <p>Ser a base contábil e estratégica que libera o empreendedor para focar no que realmente importa: inovar, crescer e gerar impacto. Levamos tecnologia e expertise corporativa para empresas de todos os tamanhos.</p>
           </div>
         </div>
 
@@ -231,15 +308,15 @@
           <div class="value-block__number">02</div>
           <div class="value-block__content">
             <h3>No que Acreditamos</h3>
-            <p>Que o pós-venda falho e o atendimento genérico são o maior problema do mercado contábil. Por isso entregamos algo personalizado, com transparência e respeito à realidade de cada cliente.</p>
+            <p>Que contabilidade de qualidade não pode ser privilégio de grandes empresas. Em 2026, a tecnologia nos permite democratizar a inteligência financeira — e é exatamente isso que fazemos todos os dias.</p>
           </div>
         </div>
 
         <div class="value-block reveal reveal--delay-3">
           <div class="value-block__number">03</div>
           <div class="value-block__content">
-            <h3>Nossa Inspiração</h3>
-            <p>Bater recordes de clientes satisfeitos. Não é apenas uma frase — é a meta que orienta cada decisão, cada atendimento e cada solução que entregamos.</p>
+            <h3>Nossa Visão</h3>
+            <p>Ser reconhecida como a assessoria contábil mais inovadora e próxima dos clientes no Brasil. Não em escala industrial — mas em profundidade de relacionamento e qualidade de entrega inegociável.</p>
           </div>
         </div>
 
@@ -254,27 +331,27 @@
   <section class="testimonials">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section__eyebrow">Clientes que confiam</span>
-        <h2 class="section__title">O que dizem sobre <em>a INTEC</em></h2>
+        <span class="section__eyebrow">Quem já confia na Atlas</span>
+        <h2 class="section__title">O que nossos clientes <em>dizem</em></h2>
       </div>
 
       <div class="testimonials__track" id="testimonialsTrack">
 
         <div class="testimonial-card reveal reveal--delay-1">
           <div class="testimonial-card__quote">"</div>
-          <p class="testimonial-card__text">A INTEC trouxe muita praticidade e soluções para a minha empresa. Comprometimento e dedicação fazem toda a diferença nas nossas vidas!</p>
+          <p class="testimonial-card__text">A Atlas transformou a forma como gerencio minha empresa. Tenho visibilidade financeira em tempo real e um consultor que realmente entende o meu negócio.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">GF</div>
             <div>
               <strong>Dra. Gisele Firmino</strong>
-              <span>Clínica Fisioderma</span>
+              <span>Clínica Fisioderma — São Paulo</span>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card reveal reveal--delay-2">
           <div class="testimonial-card__quote">"</div>
-          <p class="testimonial-card__text">A INTEC agrega diariamente valor ao meu negócio com seriedade e dinamismo. Tenho tudo que preciso no celular e a tranquilidade para focar nos objetivos.</p>
+          <p class="testimonial-card__text">Finalmente encontrei uma assessoria que entrega estratégia, não só burocracia. Os relatórios gerenciais da Atlas mudaram as minhas decisões de investimento.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">DC</div>
             <div>
@@ -286,7 +363,7 @@
 
         <div class="testimonial-card reveal reveal--delay-3">
           <div class="testimonial-card__quote">"</div>
-          <p class="testimonial-card__text">A INTEC veio para facilitar minha empresa. Com rapidez e eficiência a equipe soluciona todos os meus pedidos. Parabéns a toda equipe, sucesso sempre.</p>
+          <p class="testimonial-card__text">Agilidade, transparência e comprometimento. A equipe da Atlas resolve qualquer demanda antes que eu precise me preocupar. Recomendo sem hesitar.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">AF</div>
             <div>
@@ -307,8 +384,8 @@
   <section class="cta-banner reveal">
     <div class="container cta-banner__inner">
       <div class="cta-banner__text">
-        <h2>Pronto para transformar<br /><em>a gestão do seu negócio?</em></h2>
-        <p>Fale com um especialista da INTEC agora mesmo. Sem compromisso.</p>
+        <h2>Pronto para construir uma base<br /><em>sólida para o seu negócio?</em></h2>
+        <p>Converse com um especialista da Atlas agora. Sem compromisso, sem burocracia.</p>
       </div>
       <div class="cta-banner__actions">
         <a href="#contato" class="btn btn--primary btn--lg">Quero falar com um especialista</a>
@@ -329,13 +406,13 @@
       <!-- Info -->
       <div class="contact__info reveal reveal--left">
         <span class="section__eyebrow">Contato</span>
-        <h2 class="section__title">Vamos conversar<br /><em>sobre o seu negócio</em></h2>
-        <p>Estamos prontos para entender a realidade da sua empresa e apresentar as melhores soluções contábeis para você.</p>
+        <h2 class="section__title">Vamos conversar sobre<br /><em>o futuro do seu negócio</em></h2>
+        <p>Nossa equipe está pronta para entender seus desafios e apresentar soluções contábeis estratégicas feitas sob medida para você.</p>
 
         <ul class="contact__list">
           <li>
             <i class="ph ph-map-pin"></i>
-            <span>Av. Paulista, 1471 — Conj. 511<br/>Bela Vista, São Paulo/SP — CEP 01311-927</span>
+            <span>Av. Paulista, 1471 — Conj. 511<br />Bela Vista, São Paulo/SP — CEP 01311-927</span>
           </li>
           <li>
             <i class="ph ph-phone"></i>
@@ -362,23 +439,28 @@
 
       <!-- Formulário -->
       <div class="contact__form-wrap reveal reveal--right">
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/manelqjl" method="POST" novalidate>
+        <form class="contact-form" id="contactForm"
+              action="https://formspree.io/f/manelqjl" method="POST" novalidate>
 
           <div class="form-group">
             <label for="name" class="form-label">Nome completo</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required autocomplete="name" />
+            <input type="text" id="name" name="name" class="form-input"
+                   placeholder="Seu nome" required autocomplete="name" />
             <span class="form-error" id="nameError">Por favor, informe seu nome.</span>
           </div>
 
           <div class="form-group">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required autocomplete="email" />
+            <label for="email" class="form-label">E-mail corporativo</label>
+            <input type="email" id="email" name="email" class="form-input"
+                   placeholder="voce@empresa.com.br" required autocomplete="email" />
             <span class="form-error" id="emailError">Por favor, informe um e-mail válido.</span>
           </div>
 
           <div class="form-group">
-            <label for="message" class="form-label">Mensagem</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Conte-nos sobre seu negócio e o que você precisa..." required rows="5"></textarea>
+            <label for="message" class="form-label">Como podemos ajudar?</label>
+            <textarea id="message" name="message" class="form-input form-textarea"
+                      placeholder="Conte-nos sobre sua empresa, seus desafios fiscais ou o que você precisa neste momento..."
+                      required rows="5"></textarea>
             <span class="form-error" id="messageError">Por favor, escreva uma mensagem.</span>
           </div>
 
@@ -387,14 +469,14 @@
             <span class="btn__loader" aria-hidden="true"></span>
           </button>
 
-          <!-- Feedback de sucesso -->
-          <div class="form-feedback form-feedback--success" id="formSuccess" role="alert" aria-live="polite">
+          <div class="form-feedback form-feedback--success" id="formSuccess"
+               role="alert" aria-live="polite">
             <i class="ph ph-check-circle"></i>
-            <strong>Mensagem enviada!</strong> Entraremos em contato em breve.
+            <strong>Mensagem enviada!</strong> Nossa equipe entrará em contato em até 1 dia útil.
           </div>
 
-          <!-- Feedback de erro -->
-          <div class="form-feedback form-feedback--error" id="formError" role="alert" aria-live="polite">
+          <div class="form-feedback form-feedback--error" id="formError"
+               role="alert" aria-live="polite">
             <i class="ph ph-warning-circle"></i>
             <strong>Algo deu errado.</strong> Tente novamente ou nos ligue diretamente.
           </div>
@@ -412,14 +494,34 @@
   <footer class="footer">
     <div class="container footer__inner">
 
+      <!-- Brand -->
       <div class="footer__brand">
-        <a href="#top" class="header__logo footer__logo">
-          <span class="logo__icon">▲</span>
-          <span class="logo__text">INTEC<em>assessoria</em></span>
+        <a href="#top" class="header__logo footer__logo" aria-label="Atlas Assessoria">
+          <svg class="logo__svg" width="28" height="28" viewBox="0 0 64 64"
+               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="12" fill="currentColor" opacity="0.12"/>
+            <circle cx="32" cy="21" r="13" fill="none"
+                    stroke="currentColor" stroke-width="2.5" opacity="0.85"/>
+            <ellipse cx="32" cy="21" rx="13" ry="5.2"
+                     fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+            <line x1="22" y1="36" x2="26" y2="27"
+                  stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <line x1="42" y1="36" x2="38" y2="27"
+                  stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="32" cy="33.5" r="3" fill="currentColor"/>
+            <rect x="28.5" y="36" width="7" height="8" rx="2" fill="currentColor"/>
+            <line x1="30.5" y1="44" x2="28" y2="52"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="33.5" y1="44" x2="36" y2="52"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="32" cy="8" r="2" fill="currentColor" opacity="0.75"/>
+          </svg>
+          <span class="logo__text">ATLAS<em>assessoria</em></span>
         </a>
-        <p>Contabilidade digital com relacionamento humano. Seu negócio em boas mãos.</p>
+        <p>Contabilidade estratégica com tecnologia e relacionamento humano. A base que seu negócio precisa para crescer com segurança em 2026.</p>
       </div>
 
+      <!-- Navegação -->
       <div class="footer__links">
         <h4>Navegação</h4>
         <ul>
@@ -430,33 +532,54 @@
         </ul>
       </div>
 
+      <!-- Serviços -->
       <div class="footer__links">
         <h4>Serviços</h4>
         <ul>
           <li><a href="#">Abertura de Empresa</a></li>
-          <li><a href="#">Escrita Fiscal</a></li>
+          <li><a href="#">Planejamento Tributário</a></li>
           <li><a href="#">Folha de Pagamento</a></li>
-          <li><a href="#">Assessoria Contábil</a></li>
+          <li><a href="#">Consultoria Gerencial</a></li>
+          <li><a href="#">Regularização Fiscal</a></li>
         </ul>
       </div>
 
+      <!-- Contato -->
       <div class="footer__contact">
-        <h4>Contato</h4>
-        <p>Av. Paulista, 1471 — Conj. 511<br />São Paulo / SP</p>
+        <h4>Fale Conosco</h4>
+        <p>Av. Paulista, 1471 — Conj. 511<br />São Paulo / SP — CEP 01311-927</p>
         <p><a href="tel:+5519989676289">(19) 98967-6289</a></p>
+        <p><a href="tel:+5511993620954">(11) 99362-0954</a></p>
         <div class="footer__social">
-          <a href="https://www.facebook.com/intecassessoria/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-          <a href="https://www.instagram.com/intecassessoriacontabil/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-          <a href="https://www.youtube.com/channel/UCm5NT-6pG0mRLT1nJD4HyGA" target="_blank" rel="noopener" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+          <a href="https://www.facebook.com/intecassessoria/"
+             target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
+          <a href="https://www.instagram.com/intecassessoriacontabil/"
+             target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCm5NT-6pG0mRLT1nJD4HyGA"
+             target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="ph ph-youtube-logo"></i>
+          </a>
+          <a href="https://linkedin.com/"
+             target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="ph ph-linkedin-logo"></i>
+          </a>
         </div>
       </div>
 
     </div>
 
+    <!-- Bottom bar -->
     <div class="footer__bottom">
       <div class="container">
-        <p>&copy; 2024 INTEC Assessoria Contábil. Todos os direitos reservados.</p>
-        <a href="#">Política de Privacidade</a>
+        <p>&copy; 2026 Atlas Assessoria. Todos os direitos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
       </div>
     </div>
   </footer>

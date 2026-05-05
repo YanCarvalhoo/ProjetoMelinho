@@ -9,6 +9,13 @@
      xl: 1200px+    (desktop)
 ════════════════════════════════════════════════════ */
 
+/* ═══════════════════════════════════════════════════
+   ATLAS — Atualização 2026
+   - Logo SVG inline com currentColor
+   - Footer bottom-links
+   - Ajustes de identidade ATLAS
+════════════════════════════════════════════════════ */
+
 /* ─── CSS Custom Properties ─── */
 :root {
   --clr-primary-light: #F2D479;
@@ -1420,6 +1427,63 @@ em  { font-style: italic; }
     transform: none !important;
   }
 }
+
+/* ════════════════════════════════════════════
+   LOGO SVG INLINE — herda cor via currentColor
+════════════════════════════════════════════ */
+
+/* No hero (header não scrollado): logo branca */
+.header:not(.scrolled) .header__logo { color: var(--clr-white); }
+.header:not(.scrolled) .logo__text   { color: var(--clr-white); }
+.header:not(.scrolled) .logo__text em { color: var(--clr-primary-light); }
+
+/* Após scroll: logo nas cores da marca */
+.header.scrolled .header__logo { color: var(--clr-primary-dark); }
+.header.scrolled .logo__text   { color: var(--clr-dark); }
+.header.scrolled .logo__text em { color: var(--clr-primary-dark); }
+
+/* No footer: logo clara */
+.footer__logo { color: var(--clr-primary-light); }
+.footer__logo .logo__text   { color: var(--clr-white); }
+.footer__logo .logo__text em { color: var(--clr-primary-light); }
+
+/* SVG do logo dimensionado */
+.logo__svg {
+  width:  32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* ════════════════════════════════════════════
+   FOOTER BOTTOM LINKS
+════════════════════════════════════════════ */
+.footer__bottom-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__bottom-links a {
+  font-size: 0.79rem;
+  color: rgba(255,255,255,.3);
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+.footer__bottom-links a:hover { color: var(--clr-primary-light); }
+
+@media (max-width: 599px) {
+  .footer__bottom-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* ════════════════════════════════════════════
+   HAMBÚRGUER: cor correta no hero (não scrollado)
+════════════════════════════════════════════ */
+.header:not(.scrolled) .header__toggle span { background: var(--clr-white); }
+.header.scrolled       .header__toggle span { background: var(--clr-dark); }
 
 /* Print */
 @media print {
